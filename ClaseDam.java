@@ -1,13 +1,13 @@
- import java.util.*;
+import java.util.*;
 
 public class ClaseDam {
-    
+
     private String tutor;
     private String aula;
     private String centro;
     private ArrayList<Alumno> alumnos;
     private int capacidad;
-    
+
     /**
      * Crea una clase
      */
@@ -30,35 +30,35 @@ public class ClaseDam {
             alumnos.add(nuevoAlumno);
         }
     }
-    
+
     /**
      * Devuelve el numero de alumnos matriculados
      */
     public int getNumeroDeAlumnos() {
         return alumnos.size();
     }
-    
+
     /**
      * Fija el aula donde se da la clase
      */
     public void setAula(String aulaClase) {
         aula = aulaClase;
     }
-    
+
     /**
      * Fija el centro (el instituto) al que pertenece la clase
      */
     public void setCentro(String centroClase) {
         centro = centroClase;
     }
-    
+
     /**
      * Fija el tutor de la clase
      */
     public void setTutor(String nombreTutor) {
         tutor = nombreTutor;
     }
-    
+
     /**
      * Imprime por pantalla los detalles de la clase
      */
@@ -72,16 +72,15 @@ public class ClaseDam {
         }
         System.out.println("Numero de alumnos: " + getNumeroDeAlumnos());
     }
-    
-    
+
     /**
      * JAJA XD ME QUIERO MORIR EN SERIO (????)?*:???
      */
     public void imprimirListaNumeradaDeAlumnos(){
         int polePosition=0;
-    for(Alumno alumno:alumnos){ 
-        System.out.println(polePosition +1 + "." +alumno.getNombre()+"-" + alumno.getNumeroMatricula()+"-" +alumno.getEdad());
-        polePosition +=1;
-    }
+        for(Alumno alumno:alumnos){ 
+            System.out.println(polePosition +1 + "." +alumno.getNombre()+"-" + alumno.getNumeroMatricula()+"-" +alumno.getEdad());
+            polePosition +=1;
+        }
     }
 }
