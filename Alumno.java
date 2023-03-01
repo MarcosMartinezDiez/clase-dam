@@ -67,4 +67,8 @@ public class Alumno {
     public String getNumeroMatricula () {
         return numeroMatricula;
     }
+    
+    public int getEdad(){
+        return edad;
+    }
 }

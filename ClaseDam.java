@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 
 public class ClaseDam {
     
@@ -71,5 +71,17 @@ public class ClaseDam {
             alumno.imprimeDetalles();
         }
         System.out.println("Numero de alumnos: " + getNumeroDeAlumnos());
+    }
+    
+    
+    /**
+     * JAJA XD ME QUIERO MORIR EN SERIO (????)?*:???
+     */
+    public void imprimirListaNumeradaDeAlumnos(){
+        int polePosition=0;
+    for(Alumno alumno:alumnos){ 
+        System.out.println(polePosition +1 + "." +alumno.getNombre()+"-" + alumno.getNumeroMatricula()+"-" +alumno.getEdad());
+        polePosition +=1;
+    }
     }
 }
