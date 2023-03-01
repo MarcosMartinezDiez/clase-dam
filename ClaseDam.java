@@ -79,7 +79,7 @@ public class ClaseDam {
     public void imprimirListaNumeradaDeAlumnos(){
         int polePosition=0;
         for(Alumno alumno:alumnos){ 
-            System.out.println(polePosition +1 + "." +alumno.getNombre()+"-" + alumno.getNumeroMatricula()+"-" +alumno.getEdad());
+            System.out.println(polePosition +1 + "." +alumno.getNombre()+"-" + "("+alumno.getNumeroMatricula()+")"+"-" +alumno.getEdad()+ "años");
             polePosition +=1;
         }
     }
